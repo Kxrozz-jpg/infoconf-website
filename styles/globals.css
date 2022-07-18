@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-moving-background {
+  animation: moving-background 5s ease-in-out;
+}
+
+@layer components {
+  .Button {
+    @apply relative inline-block px-5 py-2 text-lg font-bold text-center text-gray-900 no-underline whitespace-nowrap align-middle transition-colors bg-white border-2 border-gray-900 border-solid rounded-md cursor-pointer select-none hover:bg-red-200 hover:text-gray-900;
+  }
+}
+
+@keyframes moving-background {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0.4;
+  }
+
+  to {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
