@@ -9,7 +9,7 @@ export default function FAQ() {
 
   return (
     <section
-      className="pt-20 pb-10 bg-gradient-to-r from-red-500 via-red-500 to-red-700 sm:py-16 md:py-20 lg:py-24"
+      className="pt-20 pb-10 bg-gradient-to-r from-red-500 via-red-500 to-red-700 sm:py-16 md:py-20 lg:py-24 mt-14"
       style={{ clipPath: "polygon(100% 1%, 100% 101%, 0 100%, 0 0)" }}
     >
       <div className="max-w-6xl px-8 mx-auto lg:px-16">

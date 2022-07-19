@@ -37,7 +37,7 @@ export default function Importants() {
           <div className="relative flex flex-col items-start w-full space-y-5 sm:items-center sm:flex-row sm:space-y-0 sm:space-x-3">
             <div className="relative inline-block">
               <div className="w-full h-full bg-gray-900 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0"></div>
-              <a href="/app" className="Button">
+              <a href="/blog/aplicaciones-utiles" className="Button">
                 ¡Ver el artículo!
               </a>
             </div>

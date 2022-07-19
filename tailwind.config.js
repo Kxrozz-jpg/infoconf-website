@@ -25,7 +25,10 @@ module.exports = {
           },
         },
       },
+      screens: {
+        tall: { raw: "(max-width: 640px)" },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

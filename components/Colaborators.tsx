@@ -52,9 +52,14 @@ export default function Colaborators() {
             .
           </p>
         </div>
-        <div className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
+        <div className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5x">
           {Colab.map((colab) => (
-            <Collage key={colab.id} name={colab.name} role={colab.role} img={colab.img} />
+            <Collage
+              key={colab.id}
+              name={colab.name}
+              role={colab.role}
+              img={colab.img}
+            />
           ))}
         </div>
       </div>

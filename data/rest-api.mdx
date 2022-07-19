@@ -1,0 +1,34 @@
+---
+title: "Principios para crear un REST API en Express y Nodejs"
+summary: "Una de las tecnologías más usadas actualmente son las REST API'S usadas para traer datos a aplicaciones ofreciendo una experiencia más dinámica al usuario."
+author: "Stalin Rafael"
+authorImg: "https://i.imgur.com/cYGVvdr.jpg"
+date: "2022-7-19T00:00:00Z"
+---
+
+Una de las tecnologías más usadas actualmente son las REST API'S usadas para traer datos a aplicaciones ofreciendo una experiencia más dinámica al usuario, estás son una de las más importantes en el desarrollo de apliaciones en la actualidad, siendo usadas en apliaciones grande como pequeñas, llevandos datos importantes con peticiones al servidor donde se ubican y aquí entrar Express.
+
+## ¿Qué es Express?
+
+Express es un framework web, creado para gestionar mecanismo para manejardores de peticiones con HTTP en diferentes rutas, este el framework web más popular de Node, y una de las liberías más fáciles de escalar en un proyecto también siendo una de las subyacentes para un gran número de otros frameworks, proyecto y también para proyecto internos en empresas gigantes, es de código abierto así que permite hacer cambios a la conveniencia del desarrollo que se piense tomar.
+
+## Creando nuestra proyecto
+
+Ahora paseremos a usar código para nuestra REST API, el ejemplo que usaremos será simple, un servidor ejecutandose en el puerto `3000`, este recibirá uan ruta en la que se envirá un respuesta JSON al usuario, un ejemplo básico y fácil de comprender, para hacer esto se usa uno de los metodos que acepta el servidor llamado `GET` se usa para obtener un ruta de forma nativa.
+
+```js
+const express = require("express");
+
+const app = express(); // Creamos donde se ubicará el servidor
+const PORT = 3000; // El puerto donde estará
+
+app.get("/", (res, req) => {
+  res.send({
+    message: "Hello World",
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Running on port: ${PORT}`);
+});
+```

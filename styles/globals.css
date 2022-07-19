@@ -10,6 +10,10 @@
   .Button {
     @apply relative inline-block px-5 py-2 text-lg font-bold text-center text-gray-900 no-underline whitespace-nowrap align-middle transition-colors bg-white border-2 border-gray-900 border-solid rounded-md cursor-pointer select-none hover:bg-red-200 hover:text-gray-900;
   }
+
+  .Article {
+    @apply prose-h2:mb-4 prose-h2:text-2xl prose-h2:font-extrabold prose-h2:text-gray-600 prose-p:mb-4 prose-p:mt-0 prose-p:text-gray-700 prose-h2:mt-0 prose-a:hover:text-red-500 prose-a:underline prose-a:transition-colors prose-a:duration-100 prose-ul:pb-8 prose-ul:pl-4 prose-ul:text-gray-700 prose-ul:list-disc prose-ul:list-inside prose-ul:my-0 prose-li:my-0 prose-li:ml-0;
+  }
 }
 
 @keyframes moving-background {
